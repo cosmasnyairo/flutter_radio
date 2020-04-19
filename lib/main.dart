@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:radio_stations/provider/radio_provider.dart';
-import 'package:radio_stations/radio.dart';
+
+import 'screens/all_stations_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,11 +17,8 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-              debugShowCheckedModeBanner: false,
-
-        theme: ThemeData(
-          primaryColor: Colors.teal
-        ),
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(primaryColor: Colors.cyan),
         home: RadioPlayer(),
       ),
     );
